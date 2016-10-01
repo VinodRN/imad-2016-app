@@ -1,3 +1,3 @@
 console.log('Loaded!');
-var element = document.getElementByID('text-area');
+var element = document.getElementById('text-area');
 element.innerHTML = "newValue";
