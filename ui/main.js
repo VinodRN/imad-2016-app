@@ -8,18 +8,15 @@ button.onclick = function(){
 // capture the response and store it in a variable.
     request.onreadystatechange = function()
     {
-      console.log('ready state');
-      console.log(request.readyState);
-      console.log(request.status);
-      if(this.readyState === XMLHttpRequest.DONE && this.status === 200)
+      if(this.readyState === XMLHttpRequest.DONE)
       {
-          console.log('request done');
           //take some action
-              console.log('Status 200');
-              counter = request.responseText;
-              console.log(counter);
-              var span = document.getElementById('count');
-              span.innerHTML = counter.toString();
+          if(this.status === 200){
+          counter = request.responseText;
+          console.log(counter);
+          var span = document.getElementById('count');
+          span.innerHTML = counter.toString();
+          }
       }  
     };
     request.open('GET', 'http://vinodrn.imad.hasura-app.io/counter',true);
