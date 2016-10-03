@@ -3,6 +3,7 @@ var button = document.getElementById('btn_clickme');
 var counter = 0 ;
 
 button.onclick = function(){
+    console.log('clicked');
 // make a request to the counter endpoint
     var request = new XMLHttpRequest();
 
