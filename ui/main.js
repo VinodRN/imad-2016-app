@@ -12,7 +12,7 @@ button.onclick = function(){
       console.log('ready state');
       console.log(request.readyState);
       console.log(request.status);
-      if(request.readystate === 4)
+      if(request.readystate===4)
       {
           console.log('request done');
           //take some action
