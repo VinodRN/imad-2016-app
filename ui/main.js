@@ -9,7 +9,8 @@ button.onclick = function(){
 // capture the response and store it in a variable.
     request.onreadystatechange = function()
     {
-        console.log('ready state');
+      console.log('ready state');
+      console.log(request.readyState);
       if(request.readystate === 4)
       {
           console.log('request done');
