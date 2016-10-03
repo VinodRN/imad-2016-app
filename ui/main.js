@@ -7,10 +7,14 @@ button.onclick = function(){
     var request = new XMLHttpRequest();
 
 // capture the response and store it in a variable.
-    request.onreadystatechange = function(){
-      if(request.readystate === XMLHttpRequest.DONE){
+    request.onreadystatechange = function()
+    {
+      if(request.readystate === XMLHttpRequest.DONE)
+      {
           //take some action
-          if(request.status === 200 ){
+          if(request.status === 200 )
+          {
+              console.log(200);
               counter = request.responseText;
               console.log(counter);
               var span = document.getElementById('count');
