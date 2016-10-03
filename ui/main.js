@@ -21,22 +21,3 @@ button.onclick = function(){
     request.open('GET', 'http://vinodrn.imad.hasura-app.io/counter',true);
     request.send(null);
 };
-
-
-$(document).Ready( function(){
-    var request = new XMLHttpRequest();
-    request.open('GET', 'http://vinodrn.imad.hasura-app.io/counter',true);
-    request.send(null);
-    request.onreadystatechange = function()
-    {
-      if(request.readyState === XMLHttpRequest.DONE)
-      {
-          //take some action
-          if(request.status === 200){
-          counter = request.responseText;
-          var span = document.getElementById('count');
-          span.innerHTML = counter.toString();
-          }
-      }  
-    };
-});
