@@ -10,7 +10,7 @@ button.onclick = function(){
     request.onreadystatechange = function()
     {
         console.log('ready state');
-      if(request.readystate === XMLHttpRequest.DONE)
+      if(request.readystate === 4)
       {
           console.log('request done');
           //take some action
