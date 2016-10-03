@@ -11,18 +11,15 @@ button.onclick = function(){
       console.log('ready state');
       console.log(request.readyState);
       console.log(request.status);
-      if(request.readyState === XMLHttpRequest.DONE)
+      if(this.readyState === XMLHttpRequest.DONE && this.status === 200)
       {
           console.log('request done');
           //take some action
-          if(request.status === 200 )
-          {
               console.log('Status 200');
               counter = request.responseText;
               console.log(counter);
               var span = document.getElementById('count');
               span.innerHTML = counter.toString();
-          }
       }  
     };
     request.open('GET', 'http://vinodrn.imad.hasura-app.io/counter',true);
