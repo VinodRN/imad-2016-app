@@ -11,7 +11,7 @@ button.onclick = function(){
     {
       if(request.readystate === XMLHttpRequest.DONE)
       {
-          console.log(clicked);
+          console.log('clicked');
           //take some action
           if(request.status === 200 )
           {
