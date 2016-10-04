@@ -21,3 +21,8 @@ button.onclick = function(){
     request.open('GET', 'http://vinodrn.imad.hasura-app.io/counter',true);
     request.send(null);
 };
+
+//submit name
+var nameInput = document.getElementByID('name');
+var name = nameInput.value;
+var submit = d
