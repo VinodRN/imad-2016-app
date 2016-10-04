@@ -39,4 +39,4 @@ submit.onclick = function()
     }
     var ul = document.getElementByID('namelist');
     ul.innerHTML = list;
-}
+};
